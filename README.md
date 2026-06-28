@@ -1,1 +1,1 @@
-# html-and-css-learning-project
+# html-and-JS-learning-project
