@@ -1,5 +1,7 @@
 console.log("Hello")
 
+let num= prompt("enter your num");
+
 const profile={
     name:"ronit",
     isfollow:"true",
@@ -9,7 +11,7 @@ const profile={
 
 console.log(profile);
 
-let num= prompt("enter number");
+
 
 console.log("number is=", num);
 
@@ -35,3 +37,20 @@ else if( num >= 50){
 else{
     console.log("F Grade");
 }
+
+
+for(let i=0;i<=100;i++){
+    if(i%2==0){
+        console.log(i);
+    }
+}
+
+let gamenum = 25;
+
+
+
+while(num != gamenum){
+    num= prompt("enter new num");
+}
+
+console.log("congratulation you win");
