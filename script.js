@@ -54,3 +54,16 @@ while(num != gamenum){
 }
 
 console.log("congratulation you win");
+
+
+let marks =[85,97,44,37,76,60];
+
+sum=0;
+
+for(let i of marks){
+    sum+=i;
+}
+
+let avg=sum/marks.length;
+
+console.log(`average marks is=${avg}`);
