@@ -111,14 +111,33 @@
 // console.log(newarr);
 // console.log(output);
 
-let mybtn = document.createElement("button");
-mybtn.innerText="click me";
-mybtn.style.backgroundColor="red";
-mybtn.style.color="white";
+// let mybtn = document.createElement("button");
+// mybtn.innerText="click me";
+// mybtn.style.backgroundColor="red";
+// mybtn.style.color="white";
  
-let main = document.querySelector("main");
-main.append(mybtn);
+// let main = document.querySelector("main");
+// main.append(mybtn);
 
-let p = document.querySelector("p");
+// let p = document.querySelector("p");
 
-p.classList.add("paraa");
+// p.classList.add("paraa");
+
+ let btn = document.querySelector("#btn");
+
+ let mode = "light";
+
+ let body = document.querySelector("body");
+
+ btn.addEventListener("click",()=>{
+    if(mode === "light"){
+        mode = "dark";
+        body.style.backgroundColor = "#000000";
+    }
+    else{
+        mode="light";
+        body.style.backgroundColor = "#fff";
+    }
+    console.log(mode);
+ });
+
