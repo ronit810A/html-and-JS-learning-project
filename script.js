@@ -12,7 +12,6 @@ const profile={
 console.log(profile);
 
 
-
 console.log("number is=", num);
 
 if(num % 5 === 0){
