@@ -130,3 +130,56 @@ console.log(output);
     console.log(mode);
  });
 
+
+class toyotacar{
+    cunstructor(brand,model,color){
+        console.log("car is created");
+        this.brand=brand;
+        this.model=model;
+        this.color=color;
+    }
+    start(){
+        console.log("car is start");
+    }
+    stop(){
+        console.log("car is stop");
+    }
+    setcolor(color){
+        this.color=color;
+    }
+}
+
+let fortuner = new toyotacar();
+fortuner.setcolor("red");
+let honda = new toyotacar();
+honda.setcolor("blue");
+
+
+
+class user{
+    constructor(name,email){
+        this.name=name;
+        this.email=email;
+    }
+    viewprofile(){
+        console.log(`name=${this.name} email=${this.email}`);
+    }
+}
+class Admin extends user{
+    constructor(name,email){
+        super(name,email);
+    }
+    editprofile(){
+        data = "profile is edited";
+    }
+}
+
+let student1 = new user("ronit","ronit@example.com");
+let student2 = new user("rahul","rahul@example.com");
+let teacher1 = new user("sachin","sachin@example.com");
+
+student1.viewprofile();
+student2.viewprofile();
+teacher1.viewprofile();
+
+
