@@ -181,4 +181,14 @@ student1.viewprofile();
 student2.viewprofile();
 teacher1.viewprofile();
 
+let admin1 = new Admin("admin","admin@example.com");
+admin1.viewprofile();
+admin1.editprofile();
 
+let agea = 19;
+
+if(agea >= 18){
+    console.log("you are eligible for vote");
+}else{
+    console.log("you are not eligible for vote");
+}
