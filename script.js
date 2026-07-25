@@ -192,3 +192,7 @@ if(agea >= 18){
 }else{
     console.log("you are not eligible for vote");
 }
+
+
+
+
