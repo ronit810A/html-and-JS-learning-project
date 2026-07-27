@@ -202,12 +202,49 @@ function getdata (dataid, getnextdata){
     }, 2000);
 }
 
-getdata(1,()=>{
-    getdata(2,()=>{
-        getdata(3,()=>{
-            console.log("all data fetched");
-        });
+// getdata(1,()=>{
+//     getdata(2,()=>{
+//         getdata(3,()=>{
+//             console.log("all data fetched");
+//         });
+//     });
+// });
+
+
+function getdataa (dataid){
+    return new Promise((resolve,reject)=>{
+        setTimeout(() => {
+            console.log(`data is = ${dataid}`);
+            resolve();
+        }, 2000);
     });
-});
+}
 
+    async function getalldataa(){
+        await getdataa(1);
+        await getdataa(2);
+        await getdataa(3);
+        await getdataa(4);
+        await getdataa(5);
+        await getdataa(6);
+        await getdataa(7);
+        console.log("all data fetched");
+    }
 
+    (async function (){
+        console.log(`getting data 1...`);
+        await getdataa(1);
+        console.log(`getting data 2...`);
+        await getdataa(2);
+        console.log(`getting data 3...`);
+        await getdataa(3);
+        console.log(`getting data 4...`);
+        await getdataa(4);
+        console.log(`getting data 5...`);
+        await getdataa(5);
+        console.log(`getting data 6...`);
+        await getdataa(6);
+        console.log(`getting data 7...`);
+        await getdataa(7);
+        console.log("all data fetched");
+    })();
