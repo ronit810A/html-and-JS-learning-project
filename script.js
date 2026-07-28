@@ -248,3 +248,6 @@ function getdataa (dataid){
         await getdataa(7);
         console.log("all data fetched");
     })();
+
+
+    
