@@ -262,3 +262,4 @@ const fetfacts = async () => {
 }
 
 btn.addEventListener("click",fetfacts);
+
